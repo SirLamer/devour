@@ -670,7 +670,7 @@ describe('JsonApi', () => {
         }
       }
 
-      jsonApi.middleware = [inspectorMiddleware]
+      jsonApi.middleware = [jsonApiDeleteMiddleware, inspectorMiddleware]
 
       const payload = [
         {type: 'bar', id: 2},
